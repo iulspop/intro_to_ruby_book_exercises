@@ -3,5 +3,5 @@ movies = {
   :red_dragon => 244
 }
 
-puts movies[:"dinosaur attack"]
-puts movies[:"red dragon"]
+puts movies[:dinosaur_attack]
+puts movies[:red_dragon]
