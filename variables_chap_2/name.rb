@@ -1,5 +1,9 @@
-puts "Please enter your name:"
+puts "Please enter your first name:"
 
-name = gets.chomp
+first_name = gets.chomp
 
-puts "Greetings to you sire #{name}!"
+puts "Please enter your last name:"
+
+last_name = gets.chomp
+
+10.times { puts first_name + " " + first_name + " " + last_name}
