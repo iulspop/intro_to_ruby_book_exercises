@@ -1,3 +1,3 @@
-talk = Proc.new { puts "I am talking."}
+talk = Proc.new { |name| puts "I am talking to #{name}"}
 
-talk.call
+talk.call("Bob")
