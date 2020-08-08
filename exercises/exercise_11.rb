@@ -9,10 +9,8 @@ def add_contact_data(hash, contact_data)
   hash[:phone] = contact_data[2]
 end
 
-i = 0
-contacts.each do |name, hash|
-  add_contact_data(hash, all_contact_data[i])
-  i += 1
+contacts.each_with_index do |(name, hash), index|
+  add_contact_data(hash, all_contact_data[index])
 end
 
 puts contacts
