@@ -9,8 +9,11 @@ def add_contact_data(person, contact_data)
   person[:phone] = contact_data[2]
 end
 
-add_contact_data(contacts["Joe Smith"], all_contact_data[0])
-add_contact_data(contacts["Sally Johnson"], all_contact_data[1])
+i = 0
+contacts.each do |name, contact_entry|
+  add_contact_data(contact_entry, all_contact_data[i])
+  i += 1
+end
 
 puts contacts
 
