@@ -1,1 +1,7 @@
-p odd_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].select(&:odd?)
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+array.append 11
+array.prepend 0
+p array
+array.pop
+array.push 3
+p array
