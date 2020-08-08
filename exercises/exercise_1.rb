@@ -5,3 +5,5 @@ p array
 array.pop
 array.push 3
 p array
+array.uniq!
+p array
