@@ -3,15 +3,15 @@ all_contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"],
 
 contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 
-def add_contact_data(person, contact_data)
-  person[:email] = contact_data[0]
-  person[:address] = contact_data[1]
-  person[:phone] = contact_data[2]
+def add_contact_data(hash, contact_data)
+  hash[:email] = contact_data[0]
+  hash[:address] = contact_data[1]
+  hash[:phone] = contact_data[2]
 end
 
 i = 0
-contacts.each do |name, contact_entry|
-  add_contact_data(contact_entry, all_contact_data[i])
+contacts.each do |name, hash|
+  add_contact_data(hash, all_contact_data[i])
   i += 1
 end
 
